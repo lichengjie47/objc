@@ -18,6 +18,8 @@
 		9A9211F125F75918004EC976 /* knowledgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9211F025F75918004EC976 /* knowledgeTests.m */; };
 		9A9211FC25F75918004EC976 /* knowledgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9211FB25F75918004EC976 /* knowledgeUITests.m */; };
 		9A92121025F7596F004EC976 /* EventTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A92120F25F7596F004EC976 /* EventTestView.m */; };
+		9A92121A25F75C25004EC976 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A92121925F75C25004EC976 /* Person.m */; };
+		9A92122125F75C46004EC976 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A92122025F75C46004EC976 /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		9A9211FD25F75918004EC976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A92120E25F7596F004EC976 /* EventTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTestView.h; sourceTree = "<group>"; };
 		9A92120F25F7596F004EC976 /* EventTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventTestView.m; sourceTree = "<group>"; };
+		9A92121825F75C25004EC976 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9A92121925F75C25004EC976 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9A92121F25F75C46004EC976 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		9A92122025F75C46004EC976 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		9A9211D025F75915004EC976 /* knowledge */ = {
 			isa = PBXGroup;
 			children = (
+				9A92121725F75C17004EC976 /* KVO */,
 				9A92120C25F75927004EC976 /* 事件的传递与响应链 */,
 				9A9211D125F75915004EC976 /* AppDelegate.h */,
 				9A9211D225F75915004EC976 /* AppDelegate.m */,
@@ -151,6 +158,17 @@
 				9A92120F25F7596F004EC976 /* EventTestView.m */,
 			);
 			path = "事件的传递与响应链";
+			sourceTree = "<group>";
+		};
+		9A92121725F75C17004EC976 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				9A92121825F75C25004EC976 /* Person.h */,
+				9A92121925F75C25004EC976 /* Person.m */,
+				9A92121F25F75C46004EC976 /* Animal.h */,
+				9A92122025F75C46004EC976 /* Animal.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +302,10 @@
 			files = (
 				9A9211E725F75917004EC976 /* main.m in Sources */,
 				9A9211D925F75915004EC976 /* ViewController.m in Sources */,
+				9A92121A25F75C25004EC976 /* Person.m in Sources */,
 				9A9211D325F75915004EC976 /* AppDelegate.m in Sources */,
 				9A92121025F7596F004EC976 /* EventTestView.m in Sources */,
+				9A92122125F75C46004EC976 /* Animal.m in Sources */,
 				9A9211DF25F75915004EC976 /* knowledge.xcdatamodeld in Sources */,
 				9A9211D625F75915004EC976 /* SceneDelegate.m in Sources */,
 			);
