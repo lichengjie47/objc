@@ -1,24 +1,33 @@
 //
-//  ViewController.m
-//  事件的传递与响应链
+//  EventTestView.m
+//  knowledge
 //
-//  Created by 李成杰 on 2021/3/8.
+//  Created by 李成杰 on 2021/3/9.
 //
 
-#import "ViewController.h"
+#import "EventTestView.h"
 
-@interface ViewController ()
+@implementation EventTestView
 
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    
-    
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self){
+        self.userInteractionEnabled = NO;
+    }
+    return self;;
 }
+
+// Returns a Boolean value indicating whether the receiver contains the specified point.
+// 表示点是否在接收者(自己)身上
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+    return [super pointInside:point withEvent:event];
+}
+
+// 可以手动指定处理事件的UIView.当前视图不包含点时返回nil
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    return [super hitTest:point withEvent:event];
+}
+
 
 #pragma mark - view无法处理事件的情况
 // userInteractionEnabled = NO
@@ -46,5 +55,6 @@
 
 // 如何寻找下一个响应者
 // 如果当前view是ViewController的view则下一个响应者为UIViewController，否则父控件为下一个响应者
+
 
 @end

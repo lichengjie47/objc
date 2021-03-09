@@ -1,11 +1,12 @@
 //
 //  SceneDelegate.m
-//  事件的传递与响应链
+//  knowledge
 //
-//  Created by 李成杰 on 2021/3/8.
+//  Created by 李成杰 on 2021/3/9.
 //
 
 #import "SceneDelegate.h"
+#import "AppDelegate.h"
 
 @interface SceneDelegate ()
 
@@ -51,6 +52,9 @@
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
+
+    // Save changes in the application's managed object context when the application transitions to the background.
+    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 
 

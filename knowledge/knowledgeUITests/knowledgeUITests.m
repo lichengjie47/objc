@@ -1,12 +1,17 @@
-//___FILEHEADER___
+//
+//  knowledgeUITests.m
+//  knowledgeUITests
+//
+//  Created by 李成杰 on 2021/3/9.
+//
 
 #import <XCTest/XCTest.h>
 
-@interface ___FILEBASENAMEASIDENTIFIER___ : XCTestCase
+@interface knowledgeUITests : XCTestCase
 
 @end
 
-@implementation ___FILEBASENAMEASIDENTIFIER___
+@implementation knowledgeUITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
