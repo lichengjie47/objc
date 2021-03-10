@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "Animal.h"
+#import <AFNetworking.h>
+#import <knowledge-Swift.h>
 
 @interface ViewController ()
 @property (nonatomic, strong) Person *p;
@@ -34,21 +36,18 @@
     [dog description];
     NSLog(@"*********************************");
     
-    
-    
-
     [p addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
     [p addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew context:nil];
     
     
 //    p.name = @"李四";
-
     [p description];
     NSLog(@"*********************************");
     [dog description];
     NSLog(@"*********************************");
     
-
+    Cat *cat1 = [[Cat alloc] init];
+    [cat1 show];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{

@@ -1,0 +1,6 @@
+module Pods_knowledge {
+  umbrella header "Pods-knowledge-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5B09044C20A4D307B41D52 /* libPods-knowledge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D763DC22825043E693B1D6B5 /* libPods-knowledge.a */; };
+		9A4D5EB625F8635F00A44F7A /* SwiftyJSONUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D5EB525F8635F00A44F7A /* SwiftyJSONUsage.swift */; };
 		9A9211D325F75915004EC976 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9211D225F75915004EC976 /* AppDelegate.m */; };
 		9A9211D625F75915004EC976 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9211D525F75915004EC976 /* SceneDelegate.m */; };
 		9A9211D925F75915004EC976 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9211D825F75915004EC976 /* ViewController.m */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004D48B4E25C5DD7650908CB /* Pods-knowledge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knowledge.release.xcconfig"; path = "Target Support Files/Pods-knowledge/Pods-knowledge.release.xcconfig"; sourceTree = "<group>"; };
+		726C730CC52519FA87CD4D32 /* Pods-knowledge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knowledge.debug.xcconfig"; path = "Target Support Files/Pods-knowledge/Pods-knowledge.debug.xcconfig"; sourceTree = "<group>"; };
+		9A4D5EB425F8635F00A44F7A /* knowledge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "knowledge-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A4D5EB525F8635F00A44F7A /* SwiftyJSONUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSONUsage.swift; sourceTree = "<group>"; };
 		9A9211CE25F75915004EC976 /* knowledge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knowledge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9211D125F75915004EC976 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A9211D225F75915004EC976 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +71,7 @@
 		9A92121925F75C25004EC976 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		9A92121F25F75C46004EC976 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		9A92122025F75C46004EC976 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		D763DC22825043E693B1D6B5 /* libPods-knowledge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-knowledge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5B09044C20A4D307B41D52 /* libPods-knowledge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ED59B3A05151853C6F00692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D763DC22825043E693B1D6B5 /* libPods-knowledge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A9211C525F75915004EC976 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,8 @@
 				9A9211EF25F75918004EC976 /* knowledgeTests */,
 				9A9211FA25F75918004EC976 /* knowledgeUITests */,
 				9A9211CF25F75915004EC976 /* Products */,
+				B12DBA0C596F61D3F71BE56A /* Pods */,
+				4ED59B3A05151853C6F00692 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,12 +141,14 @@
 				9A9211D525F75915004EC976 /* SceneDelegate.m */,
 				9A9211D725F75915004EC976 /* ViewController.h */,
 				9A9211D825F75915004EC976 /* ViewController.m */,
+				9A4D5EB525F8635F00A44F7A /* SwiftyJSONUsage.swift */,
 				9A9211DA25F75915004EC976 /* Main.storyboard */,
 				9A9211E025F75917004EC976 /* Assets.xcassets */,
 				9A9211E225F75917004EC976 /* LaunchScreen.storyboard */,
 				9A9211E525F75917004EC976 /* Info.plist */,
 				9A9211E625F75917004EC976 /* main.m */,
 				9A9211DD25F75915004EC976 /* knowledge.xcdatamodeld */,
+				9A4D5EB425F8635F00A44F7A /* knowledge-Bridging-Header.h */,
 			);
 			path = knowledge;
 			sourceTree = "<group>";
@@ -171,6 +191,16 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
+		B12DBA0C596F61D3F71BE56A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				726C730CC52519FA87CD4D32 /* Pods-knowledge.debug.xcconfig */,
+				004D48B4E25C5DD7650908CB /* Pods-knowledge.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A92120025F75918004EC976 /* Build configuration list for PBXNativeTarget "knowledge" */;
 			buildPhases = (
+				2640C022A3BD75132AC232BF /* [CP] Check Pods Manifest.lock */,
 				9A9211CA25F75915004EC976 /* Sources */,
 				9A9211CB25F75915004EC976 /* Frameworks */,
 				9A9211CC25F75915004EC976 /* Resources */,
@@ -237,6 +268,7 @@
 				TargetAttributes = {
 					9A9211CD25F75915004EC976 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					9A9211EB25F75918004EC976 = {
 						CreatedOnToolsVersion = 12.4;
@@ -295,12 +327,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2640C022A3BD75132AC232BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-knowledge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A9211CA25F75915004EC976 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9A9211E725F75917004EC976 /* main.m in Sources */,
+				9A4D5EB625F8635F00A44F7A /* SwiftyJSONUsage.swift in Sources */,
 				9A9211D925F75915004EC976 /* ViewController.m in Sources */,
 				9A92121A25F75C25004EC976 /* Person.m in Sources */,
 				9A9211D325F75915004EC976 /* AppDelegate.m in Sources */,
@@ -476,10 +534,13 @@
 		};
 		9A92120125F75918004EC976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726C730CC52519FA87CD4D32 /* Pods-knowledge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 47ET4XNUCV;
 				INFOPLIST_FILE = knowledge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,16 +549,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lichengjie.knowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "knowledge/knowledge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9A92120225F75918004EC976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004D48B4E25C5DD7650908CB /* Pods-knowledge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 47ET4XNUCV;
 				INFOPLIST_FILE = knowledge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,6 +573,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lichengjie.knowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "knowledge/knowledge-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -513,6 +582,7 @@
 		9A92120425F75918004EC976 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47ET4XNUCV;
@@ -533,6 +603,7 @@
 		9A92120525F75918004EC976 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47ET4XNUCV;
@@ -553,6 +624,7 @@
 		9A92120725F75918004EC976 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47ET4XNUCV;
 				INFOPLIST_FILE = knowledgeUITests/Info.plist;
@@ -571,6 +643,7 @@
 		9A92120825F75918004EC976 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47ET4XNUCV;
 				INFOPLIST_FILE = knowledgeUITests/Info.plist;
